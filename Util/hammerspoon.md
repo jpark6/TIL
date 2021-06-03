@@ -14,20 +14,20 @@ vim을 사용하는 것은 좋은데... 😭제일 큰 문제는 한글입력이
 
 > 참고 link : <a href="https://github.com/johngrib/simple_vim_guide/blob/master/md/with_korean.md" target="_blank">[한국어 키보드로 VIM 사용하기]</a>
 
-방법 : 입력기 변경
-방법 : noimd를 설정
-방법 : input-source-switcher 설치
-방법 : Karabiner
-방법 : AutoHotkey
-방법 : 최후의 수단 한글을 아예 사용하지 않고 영문으로만 컴퓨터를 사용하는 방법이 있습니다.
+방법 : 입력기 변경  
+방법 : noimd를 설정  
+방법 : input-source-switcher 설치  
+방법 : Karabiner  
+방법 : AutoHotkey   
+방법 : 최후의 수단 한글을 아예 사용하지 않고 영문으로만 컴퓨터를 사용하는 방법이 있습니다.  
 
 여기에 있는 마지막 방법을 제외한 방법들을 시도해봤으나 잘 되지않았다.
 
 그렇게 capslock을 잘 누르며 쓰다가 불편해서 다시 검색해보다보니
 hammerspoon을 알게 되었다.
 
-윈도우의 autohotkey랑 비슷한 녀석인것같다.
-스크립트를 만들어 해당 키에 매핑을 해주면 된다.
+윈도우의 autohotkey랑 비슷한 녀석인것같다.  
+스크립트를 만들어 해당 키에 매핑을 해주면 된다.  
 
 ## 참고한 글
 
@@ -37,11 +37,11 @@ hammerspoon을 알게 되었다.
 
 ## 설정
 ### 0. hammerspoon 설치
-먼저 hammerspoon부터 설치하자
+먼저 hammerspoon부터 설치하자  
 ```shell
 brew install hammerspoon
 ```
-![hammerspoon icon](https://images.velog.io/images/jakepark/post/de1cadca-7dd1-4dbc-b3b5-df4160db23d3/Screen%20Shot%202021-06-03%20at%2010.58.33.png)
+![hammerspoon icon](https://images.velog.io/images/jakepark/post/de1cadca-7dd1-4dbc-b3b5-df4160db23d3/Screen%20Shot%202021-06-03%20at%2010.58.33.png)  
 설치를 완료하니 Hammerspoon ~~이름 그대로 망치+숫가락~~ 아이콘이 생겼다.
 
 ### 1. esc 입력시 영어 전환
@@ -56,7 +56,7 @@ init.lua파일을 찾을수 없다고 하니 init.lua파일을 만들자.
 require('modules.esc_auto_english')
 ```
 
-~/.hammerspoon 디렉토리에 modules 폴더를 만든다.
+~/.hammerspoon 디렉토리에 modules 폴더를 만든다.  
 ```shell
 mkdir modules
 ```
@@ -80,28 +80,28 @@ hs.hotkey.bind({}, 'F13', input_eng_and_esc)
 마지막 2줄을 보면
 `Ctrl` + `[` 및 `F13` 입력시 현재 언어가 영어가 아니면 영어 전환 및 `esc`키를 입력하도록 되어있다.
 
-본인의 키보드는 `~` 자리에 `esc`가 있는 이상한 키보드(anne pro2: ~~방향키도 없다~~)라서 `esc`를 누르는데 불편함이 없지만
-정상배열 키보드들은 `esc`를 누르기위해 왼손 새끼손가락이 너무 높게 올라가게 된다.
-그럴 경우 사용하는 일반모드 진입키가 `Ctrl` + `[` 이기 때문에 이 키도 같이 설정해주었다.
+본인의 키보드는 `~` 자리에 `esc`가 있는 이상한 키보드(anne pro2: ~~방향키도 없다~~)라서 `esc`를 누르는데 불편함이 없지만  
+정상배열 키보드들은 `esc`를 누르기위해 왼손 새끼손가락이 너무 높게 올라가게 된다.  
+그럴 경우 사용하는 일반모드 진입키가 `Ctrl` + `[` 이기 때문에 이 키도 같이 설정해주었다.  
 
-마지막줄에 `esc`가 아니라 `F13`에 매핑한 이유는 `esc`에 매핑하면 정상동작을 하지 않기 때문이다. 이유는 잘 모르겠다.
-그래서 저 `F13`은 btt에서 `esc`입력시 `F13`이 입력되도록 설정했다.
-요약: `esc`입력 -> btt에서 `F13`으로 변환 -> hammerspoon에서 `F13`입력받아 한영전환 및 `esc`입력
-btt가 아니라 karabiner를 사용해도 될 것 같으나 해보지는 않겠다.
+마지막줄에 `esc`가 아니라 `F13`에 매핑한 이유는 `esc`에 매핑하면 정상동작을 하지 않기 때문이다. 이유는 잘 모르겠다.  
+그래서 저 `F13`은 btt에서 `esc`입력시 `F13`이 입력되도록 설정했다.  
+요약: `esc`입력 -> btt에서 `F13`으로 변환 -> hammerspoon에서 `F13`입력받아 한영전환 및 `esc`입력  
+btt가 아니라 karabiner를 사용해도 될 것 같으나 해보지는 않겠다.  
 
-👏이제 입력모드에서 한글을 쓰다가 `esc`입력시 자동 영어 전환 및 일반모드 진입이 된다.
+👏이제 입력모드에서 한글을 쓰다가 `esc`입력시 자동 영어 전환 및 일반모드 진입이 된다.  
 
 ### 2. 한영전환시 현재 언어 표시
-한영전환키를 눌렀을 때, 바뀐 언어가 뭔지 잘 모르겠을 때가 있다.
-상단 메뉴에 나오기는 하지만 너무 작고 눈에 잘 안띈다.
-그래서 한영 전환시마다 전환된 언어가 무엇인지 화면에 나오도록 설정을 하겠다.
+한영전환키를 눌렀을 때, 바뀐 언어가 뭔지 잘 모르겠을 때가 있다.  
+상단 메뉴에 나오기는 하지만 너무 작고 눈에 잘 안띈다.  
+그래서 한영 전환시마다 전환된 언어가 무엇인지 화면에 나오도록 설정을 하겠다.  
 
-~/.hammerspoon/init.lua파일에 해당 내용을 추가하자.
+~/.hammerspoon/init.lua파일에 해당 내용을 추가하자.  
 ```lua
 -- 한영 전환시 전환된 언어 표시
 require('modules.input_source_alert')
-```
-~/.hammerspoon/modules/에 input_source_alert.lua파일을 만든다.
+```  
+~/.hammerspoon/modules/에 input_source_alert.lua파일을 만든다.  
 ```lua
 function input_source_alert()
     local input_source = {
@@ -133,6 +133,6 @@ hs.keycodes.inputSourceChanged(input_source_alert)
 이상이 없다면 위의 화면처럼 로그가 나올 것이다.
 
 
-맥북에서 캡쳐시 alert창이 나오지 않아 폰으로 찍음.
+맥북에서 캡쳐시 alert창이 나오지 않아 폰으로 찍음.  
 ![🇰🇷한글](https://images.velog.io/images/jakepark/post/6b03b388-98f7-44fc-820f-089c11c14011/image.png)
 ![🇺🇸English](https://images.velog.io/images/jakepark/post/fa293604-8b87-4172-952b-d20c661c1a2d/image.png)
