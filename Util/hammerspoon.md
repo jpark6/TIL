@@ -1,25 +1,29 @@
 ## 원할한 vim 사용을 위한 hammerspoon 설정
 ### 문제점
-터미널, IntelliJ, Eclipse, VSCode, 윈도우를 쓸경우 notepad++ 까지
+터미널, IntelliJ, Eclipse, VSCode,  
+윈도우를 쓸경우 notepad++ 까지  
 모두 vim plugin을 설치하여 사용중이다.
 vim을 사용하는 것은 좋은데... 😭제일 큰 문제는 한글입력이다.
 
 ![problem](../images/hammerspoon/problem.png)
 
-입력모드에서 한글을 입력하고 esc로 일반모드로 돌아온 다음 일반모드의 명령어를 입력하면 저렇게 한글이 나와버린다.
+입력모드에서 한글을 입력하고 esc로 일반모드로 돌아온 다음  
+일반모드의 명령어를 입력하면 저렇게 한글이 나와버린다.  
 
 그래서 매번 한영(capslock)을 누르고 작업하는 것도 😡여간 불편한 일이다.
 
 이에 대해 불편함을 느끼는 사용자는 나뿐만이 아니다.
 
-> 참고 link : <a href="https://github.com/johngrib/simple_vim_guide/blob/master/md/with_korean.md" target="_blank">[한국어 키보드로 VIM 사용하기]</a>
+> 참고 JohnGrib님 github link : <a href="https://github.com/johngrib/simple_vim_guide/blob/master/md/with_korean.md" 
+> target="_blank">
+> [한국어 키보드로 VIM 사용하기]</a>
 
-방법 : 입력기 변경  
-방법 : noimd를 설정  
-방법 : input-source-switcher 설치  
-방법 : Karabiner  
-방법 : AutoHotkey   
-방법 : 최후의 수단 한글을 아예 사용하지 않고 영문으로만 컴퓨터를 사용하는 방법이 있습니다.  
+방법 : 입력기 변경 (구름입력기가 좀 이상함: 한->영->한->영 되다가 갑자기 한->영->영(Uppercase) 현상 자주 발생. lag(지연)도 가끔 발생) 
+방법 : noimd를 설정(해당 글에 써있듯 터미널vim에서 안됨.)  
+방법 : input-source-switcher 설치(안해봄. 사실 해본거같기도 한데 기억안남.)  
+방법 : Karabiner (시에라인지 하이시에라인지 이후 안됨.)  
+방법 : AutoHotkey (🪟윈도우용임.)   
+방법 : 최후의 수단 한글을 아예 사용하지 않고 영문으로만 컴퓨터를 사용하는 방법이 있습니다.(😭미국에서 태어날껄...)  
 
 여기에 있는 마지막 방법을 제외한 방법들을 시도해봤으나 잘 되지않았다.
 
@@ -41,13 +45,13 @@ hammerspoon을 알게 되었다.
 ```shell
 brew install hammerspoon
 ```
-![hammerspoon icon](https://images.velog.io/images/jakepark/post/de1cadca-7dd1-4dbc-b3b5-df4160db23d3/Screen%20Shot%202021-06-03%20at%2010.58.33.png)  
+![hammerspoon icon](../images/hammerspoon/icon.png) 
 설치를 완료하니 Hammerspoon ~~이름 그대로 망치+숫가락~~ 아이콘이 생겼다.
 
 ### 1. esc 입력시 영어 전환
 
 Console... 메뉴를 클릭.
-![hammerspoon console](https://images.velog.io/images/jakepark/post/bc757b27-c306-4e09-91bb-27e2a3d96670/Screen%20Shot%202021-06-03%20at%2011.00.44.png)
+![hammerspoon console](../images/hammerspoon/console.png)  
 init.lua파일을 찾을수 없다고 하니 init.lua파일을 만들자.
 
 ~/.hammerspoon/init.lua
@@ -128,11 +132,10 @@ end
 hs.keycodes.inputSourceChanged(input_source_alert)
 ```
 
-![hammerspoon console](https://images.velog.io/images/jakepark/post/82475204-906f-46bd-bdc7-da3446b64d0b/image.png)
-
+![hammerspoon console_success](../images/hammerspoon/console_success.png)
 이상이 없다면 위의 화면처럼 로그가 나올 것이다.
 
 
 맥북에서 캡쳐시 alert창이 나오지 않아 폰으로 찍음.  
-![🇰🇷한글](https://images.velog.io/images/jakepark/post/6b03b388-98f7-44fc-820f-089c11c14011/image.png)
-![🇺🇸English](https://images.velog.io/images/jakepark/post/fa293604-8b87-4172-952b-d20c661c1a2d/image.png)
+![🇰🇷한글](../images/hammerspoon/kor.png)
+![🇺🇸English] (img.png)
