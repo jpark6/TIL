@@ -45,7 +45,7 @@ hammerspoon을 알게 되었다.
 ```shell
 brew install hammerspoon
 ```
-![hammerspoon icon](../images/hammerspoon/icon.png) 
+![hammerspoon icon](../images/hammerspoon/icon.png)  
 설치를 완료하니 Hammerspoon ~~이름 그대로 망치+숫가락~~ 아이콘이 생겼다.
 
 ### 1. esc 입력시 영어 전환
@@ -138,4 +138,4 @@ hs.keycodes.inputSourceChanged(input_source_alert)
 
 맥북에서 캡쳐시 alert창이 나오지 않아 폰으로 찍음.  
 ![🇰🇷한글](../images/hammerspoon/kor.png)
-![🇺🇸English] (img.png)
+![🇺🇸English](../images/hammerspoon/eng.png)
