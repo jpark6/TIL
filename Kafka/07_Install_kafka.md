@@ -2,7 +2,7 @@
 
 ### 카프카 및 주키퍼 설치
 EC2 서버 3개 설치  
-프리티어인 micro.m2 선택
+프리티어인 t2.micro 선택
 ![ec2 instance](../images/Kafka/07_Install_Kafka_ec2_instances.png)
 
 iterm2로 instance 3대 모두 접속
