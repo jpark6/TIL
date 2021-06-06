@@ -4,7 +4,8 @@
 
 ### 동적 계획법(Dynamic Programming)
 주어진 최적화 문제를 재귀적인 방식보다 작은 부분 문제로 나누어,  
-부분 문제를 풀고, 이 해를 조합하여 전체문제의 해답에 이르는 방식.
+부분 문제를 풀고, 푼 문제를 저장(memoization),  
+이 해를 조합하여 전체문제의 해답에 이르는 방식.
 
 알고리즘의 진행에 따라 탐색해야 할 범위를 동적으로 결정하므로써 탐색 범위를 한정
 
@@ -120,7 +121,7 @@ const solution = (N, number) => {
             }
             /**/
         }
-	    if(memo_arr[i].has(number)) {
+        if(memo_arr[i].has(number)) {
             return i;
         } 
     }
