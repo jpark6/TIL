@@ -99,6 +99,7 @@ const solution = (N, number) => {
         [...Array(i)].forEach(()=> num_str += N)
         memo_arr[i].add(Number(num_str));
         for(let j=1; j<i; j++) {
+            //*
             [...memo_arr[j].values()].forEach(op1=> {
                 [...memo_arr[i-j].values()].forEach(op2=> {
                     memo_arr[i].add(op1+op2);
@@ -107,6 +108,7 @@ const solution = (N, number) => {
                     op2 != 0 && memo_arr[i].add(Math.floor(op1/op2));
                 });
             });
+            /**/
             /*
             for(const op1 of memo_arr[j]) {
                 for(const op2 of memo_arr[i-j]) {
