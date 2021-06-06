@@ -63,3 +63,65 @@ number는 1 이상 32,000 이하입니다.
 - `5` : 55555, `1` [+-X/] `4`, `2` [+-X/] `3`, `3` [+-X/] `2`, `4` [+-X/] `1`
 - `n` : 'x'*n, `1` [+-X/] `n-1` ... `n-1` [+-X/] `1`
 
+```python3
+def solution(N,number):
+    s = [set() for x in range(8)]
+    for i, x in enumerate(s, start=1):
+        x.add(int(str(N) * i))
+    for i in range(len(s)):
+        for j in range(i):
+            for op1 in s[j]:
+                for op2 in s[i - j - 1]:
+                    s[i].add(op1 + op2)
+                    s[i].add(op1 - op2)
+                    s[i].add(op1 * op2)
+                    if op2 != 0:
+                        s[i].add(op1 // op2)
+        if number in s[i]:
+            answer = i + 1
+            break
+    
+    return answer
+```
+
+```javascript
+/**
+ * N을 여러번 사용하여 사칙연산으로 number를 도출함.
+ * 이때 N을 몇번 사용하는 것이 가장 적은 것인지 반환.
+ * @param {1|2|3|4|5|6|7|8|9} N - 연산에 사용할 숫자 (1~9)
+ * @param {number} number - 연산을 통해 도출해야하는 숫자 (0~32,000)
+ * @returns {number} - 가장 N을 적게 사용하는 경우의 N의 사용횟수 (n>8 이면 -1)
+ */
+const solution = (N, number) => {
+    const memo_arr = [...Array(9)].map(() => new Set()); // 중복 저장을 피하기 위해 set 사용.
+    for(let i=1; i<9; i++) {
+        let num_str = '';
+        [...Array(i)].forEach(()=> num_str += N)
+        memo_arr[i].add(Number(num_str));
+        for(let j=1; j<i; j++) {
+            [...memo_arr[j].values()].forEach(op1=> {
+                [...memo_arr[i-j].values()].forEach(op2=> {
+                    memo_arr[i].add(op1+op2);
+                    memo_arr[i].add(op1-op2);
+                    memo_arr[i].add(op1*op2);
+                    op2 != 0 && memo_arr[i].add(Math.floor(op1/op2));
+                });
+            });
+            /*
+            for(const op1 of memo_arr[j]) {
+                for(const op2 of memo_arr[i-j]) {
+                    memo_arr[i].add(op1+op2);
+                    memo_arr[i].add(op1-op2);
+                    memo_arr[i].add(op1*op2);
+                    op2 != 0 && memo_arr[i].add(Math.floor(op1/op2));
+                }
+            }
+            /**/
+        }
+	    if(memo_arr[i].has(number)) {
+            return i;
+        } 
+    }
+    return -1;
+}
+```
