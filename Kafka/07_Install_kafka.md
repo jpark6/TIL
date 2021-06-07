@@ -43,4 +43,37 @@ server.3=test-broker03:2888:3888
 ![zoo.cfg](../images/Kafka/07_Install_Kafka_zoo_cfg.png)
 
 /etc/hosts에 설정 추가
+
+```shell
+172.31.36.221 test-broker01
+172.31.33.109 test-broker02
+172.31.40.79 test-broker03
+
+```
 ![hosts](../images/Kafka/07_Install_Kafka_hosts.png)
+
+자바 설치
+```shell
+sudo apt install openjdk-16-jre-headless
+```
+
+자바 설치후 zookeeper 실행
+```shell
+cd /home/ubuntu/apache-zookeeper-3.7.0-bin/bin
+sudo ./jkServer.sh start
+```
+
+![run zookeeper](../images/Kafka/07_Install_Kafka_run_zookeeper.png)
+
+Kafka 다운로드
+```shell
+wget https://mirror.navercorp.com/apache/kafka/2.8.0/kafka-2.8.0-src.tgz
+```
+![install kafka](../images/Kafka/07_Install_Kafka_install_kafka.png)
+
+Kafka 압축해제
+```shell
+tar xvf kafka-2.8.0-src.tgz
+```
+
+ec2 ubuntu에서 gradle 빌드를 한시간째 하고 있다 다음에 하자...
