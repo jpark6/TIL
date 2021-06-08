@@ -54,7 +54,7 @@ server.3=test-broker03:2888:3888
 
 자바 설치
 ```shell
-sudo apt install openjdk-16-jre-headless
+sudo apt install openjdk-11-jre-headless
 ```
 
 자바 설치후 zookeeper 실행
@@ -76,4 +76,5 @@ Kafka 압축해제
 tar xvf kafka-2.8.0-src.tgz
 ```
 
-ec2 ubuntu에서 gradle 빌드를 한시간째 하고 있다 다음에 하자...
+ec2 ubuntu에서 kafka를 실행하니 gradlew를 하라고 해서 실행하니 빌드를 너무 오래 하고 있다.
+[[문제점 찾음]](https://twofootdog.tistory.com/92)  
