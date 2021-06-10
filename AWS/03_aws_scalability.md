@@ -21,3 +21,8 @@
 
 ### ELB
 - Elastic Load Balancer
+- aws에서 제공하는 Load Balancer
+- health check: instance가 살아있는지 주기적으로 체크해 죽어있는 instance로는 사용자의 요청을 보내지 않음. 
+
+### Auto Scaling
+- CPU 점유율에 따라 instance 자동 생성 및 삭제
