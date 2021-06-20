@@ -1,6 +1,6 @@
-## AWS에 Kafka cluster 설치, 실행하기
+# AWS에 Kafka cluster 설치, 실행하기
 
-### 카프카 및 주키퍼 설치
+## 카프카 및 주키퍼 설치
 EC2 서버 3개 설치  
 프리티어인 t2.micro 선택
 ![ec2 instance](../../images/Kafka/07_Install_Kafka_ec2_instances.png)
@@ -76,5 +76,3 @@ Kafka 압축해제
 tar xvf kafka-2.8.0-src.tgz
 ```
 
-ec2 ubuntu에서 kafka를 실행하니 gradlew를 하라고 해서 실행하니 빌드를 너무 오래 하고 있다.
-[[문제점 찾음]](https://twofootdog.tistory.com/92)  

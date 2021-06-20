@@ -1,13 +1,13 @@
-## Broker, Replication, ISR(In-Sync Replica)
+# Broker, Replication, ISR(In-Sync Replica)
 ![img.png](../../images/Kafka/02_Topic_Info.png)
 
-### Broker
+## Broker
 - 카프카가 설치되어 있는 서버 단위를 말함.
 - 보통 3개 이상의 broker로 구성하여 사용하는 것을 권장.
 - 파티션이 1개이고 replication이 1인 topic이 존재하고  
   브로커가 3대라면 3대중 1대에 해당 토피그이 정보(데이터)가 저장됨.
   
-### Replication
+## Replication
 - Kafka 아키텍쳐의 핵심.
 - 클러스터에서 서버가 장애가 생길 때, 카프카의 가용성을 보장하는 가장 좋은 방법.
 - replication은 partition의 복제를 뜻함.
@@ -37,5 +37,5 @@
 - Replication이 너무 많으면 브로커의 리소스 사용량도 늘어나게 됨.
 - 따라서 kafka에 들어오느 데이터 량과 저장 시간을 생각해서 replication 개수를 정하는 것이 좋음. 
 
-### ISR(In Sync Replica)
+## ISR(In Sync Replica)
 - Leader Partiton과 Follow Partition을 합쳐서 ISR 이라고 함.

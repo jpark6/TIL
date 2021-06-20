@@ -1,4 +1,4 @@
-## Partitioner
+# Partitioner
 Kafka Producer의 중요개념.  
 Partitioner를 알면 partiton을 조금 더 효과적으로 사용할 수 있음.  
 Producer가 데이터를 파티션에 보내면 무조건 Partitioner를 통해 브로커로 데이터가 전송됨.  
@@ -10,7 +10,7 @@ Producer가 데이터를 파티션에 보내면 무조건 Partitioner를 통해 
   + 메시지 키를 가진 레코드는 파티션에 의해 특정한 해시 값이 생성됨
   + 이 해쉬값을 기준으로 어느 파티션에 들어갈지 결정됨.
   + 동일한 메시지 키를 가진 레코드는 동일한 해쉬값을 가지기 때문에  
-    항상 동일한 파티션에 들어감.
+    항상 동일한 파티션에 들어감.  
     ![Partitioner_has_message_key](../../images/Kafka/04_Partitioner.png)
 - 메시지 키가 없는 경우
   + 라운드로빈으로 들어감.

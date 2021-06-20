@@ -1,4 +1,4 @@
-## Consumer Lag
+# Consumer Lag
 > Kafka를 운영하는데 있어 중요한 모니터링 지표  
 > 랙 걸렸다고 표현할 때 쓰는 그 랙임(스펠링은 처음 알았음. __lack은 결핍__)
 

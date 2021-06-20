@@ -16,6 +16,9 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
+    ['link', { rel: "apple-touch-icon", sizes: "180x180", href: "./icon/180.png"}],
+    ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "./icon/32.png"}],
+    ['link', { rel: "icon", type: "image/png", sizes: "16x16", href: "./icon/16.png"}],
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
@@ -47,7 +50,7 @@ module.exports = {
       }
     ],
     sidebar: getSideBar("./"),
-    sidebarDepth: 0,
+    sidebarDepth: 3,
   },
 
   /**
@@ -56,5 +59,9 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
-  ]
+  ],
+  markdown: {
+    lineNumbers: true
+  }
+  
 }
