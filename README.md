@@ -1,4 +1,4 @@
-# 📚 TIL: Tody I Learn  
+# 📚 TIL: Today I Learn  
 ## ✅ 학습 목표
 > 무료인강, 유료인강, 유투브, 기술블로그, 코딩테스트, 알고리즘공부 등을 하며  
 > 배운 내용 markdown 파일로 정리
