@@ -41,7 +41,7 @@ module.exports = {
         link: 'https://github.com/jpark6',
       },
       { text: 'Mail',
-        link: 'mailto://qkstjr09@gmail.com',
+        link: 'mailto:qkstjr09@gmail.com',
       },
       {
         text: 'blog',
