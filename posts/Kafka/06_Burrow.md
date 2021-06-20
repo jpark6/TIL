@@ -20,7 +20,7 @@ Burrow는 컨수머 lag 모니터링을 도와주는 독립적인 애플리케�
 1. 멀티 카프카 클러스터 지원
   - kafka를 운영하는 대부분의 기업은 2개 이상의 kafka cluster를 운영하고 있음.
   - kafka cluster가 여러개이더라도 Burrow Application 1개만 실행해서 연동한다면 카프카 클러스터들에 붙은 컨슈머의 lag을 모두 모니터링 할 수 있음.
-  ![Burrow Application](../images/Kafka/06_Burrow_Application.png)
+  ![Burrow Application](../../images/Kafka/06_Burrow_Application.png)
 2. Sliding window를 통한 consumer의 status 확인.
   - Sliding window를 통해서 consumer의 status를 'ERROR', 'WARNING', 'OK'로 표현할 수 있도록 함.
   - 만약, 데이터 양이 일시적으로 많아지면서 consumer offer이 증가되고 있으면 'WARNING'으로 정의 됨.

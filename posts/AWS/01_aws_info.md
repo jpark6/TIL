@@ -1,5 +1,3 @@
-## AWS 강의
-> [[생활코딩 강의 링크]](https://opentutorials.org/course/2717)
 
 ### 지역(Region)과 가용영역(AZ: Availability Zone)
 - Region : 지역 

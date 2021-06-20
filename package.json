@@ -1,0 +1,22 @@
+{
+  "name": "TIL",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "authors": {
+    "name": "JakePark",
+    "email": "qkstjr09@gmail.com"
+  },
+  "repository": "https://github.com/jpark6/TIL/TIL",
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.8.2"
+  },
+  "dependencies": {
+    "directory-tree": "^2.2.9"
+  }
+}

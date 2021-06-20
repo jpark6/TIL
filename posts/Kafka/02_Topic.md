@@ -1,5 +1,5 @@
 ## what is Kafka TOPIC? 
-![img.png](../images/Kafka/02_Topic_Info.png)
+![img.png](../../images/Kafka/02_Topic_Info.png)
 ### 개요
 
 - 토픽은 여러개를 생성할 수 있음.
@@ -18,4 +18,4 @@
 - 새로운 consumer가 붙었을때 다시 0번부터 가져감
   + Consumer 그룹이 다르고 auto.offset.reset == earliest 이어야함.
   
-![img.png](../images/Kafka/02_Topic_Inner.png)
+![img.png](../../images/Kafka/02_Topic_Inner.png)

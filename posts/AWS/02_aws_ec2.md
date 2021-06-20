@@ -22,9 +22,9 @@
 ### 태그와 보안그룹
 #### 태그
 - 생성된 인스턴스에 대한 설명을 태그로 생성할 수 있음.
-  ![tag](../images/aws/02_aws_ec2_tag.png)
+  ![tag](images/aws/02_aws_ec2_tag.png)
 #### 보안그룹 : Security Group
 - 인스턴스에 대한 접근 권한 설정.
 - 프로토콜(ssh/http/rdp), 접근 IP 등 설정 가능.
-![security group](../images/aws/02_aws_ec2_security_group.png)
+![security group](images/aws/02_aws_ec2_security_group.png)
   

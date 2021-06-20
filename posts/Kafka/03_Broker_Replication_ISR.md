@@ -1,5 +1,5 @@
 ## Broker, Replication, ISR(In-Sync Replica)
-![img.png](../images/Kafka/02_Topic_Info.png)
+![img.png](../../images/Kafka/02_Topic_Info.png)
 
 ### Broker
 - 카프카가 설치되어 있는 서버 단위를 말함.
@@ -13,16 +13,16 @@
 - replication은 partition의 복제를 뜻함.
 - partiton의 고가용성을 위해 사용함.
 - 만약 replication이 1이라면 partition은 1개만 존재함
-  ![P1R1](../images/Kafka/03_BRI_P1R1.png)
+  ![P1R1](../../images/Kafka/03_BRI_P1R1.png)
 - 만약 replication이 2라면 partition은 원본 1개와 복제본 1개로 구성됨.
-  ![P1R2](../images/Kafka/03_BRI_P1R2.png)
+  ![P1R2](../../images/Kafka/03_BRI_P1R2.png)
 - 만약 replication이 3이면 partition은 원본 1개와 복제본 2개로 구성.
-  ![P1R3](../images/Kafka/03_BRI_P1R3.png)
+  ![P1R3](../../images/Kafka/03_BRI_P1R3.png)
 - 다만, 브로커 캐수에 따라서 replication 개수가 제한됨.
   + 브로커 개수가 3이면 replicaton은 4 이상이 될 수 없음.
 - 원본 1개의 파티션을 Leader Partiton이라고 부름.
 - 나머지 2개의 파티션을 Follower Partition이라고 부름.
-  ![Leader&Follow Partition](../images/Kafka/03_BRI_LF.png)
+  ![Leader&Follow Partition](../../images/Kafka/03_BRI_LF.png)
 - 프로듀서가 토픽의 파티션에 데이터를 전달할 때, 전달 받는 주체는 Leader Partition.
 - 프로듀서에는 ack라는 상세 옵션이 있는데, 이 ack를 통해 고가용성을 유지.
   + 이 옵션은 partition의 replication과 관련이 있음.

@@ -11,7 +11,7 @@ Producer가 데이터를 파티션에 보내면 무조건 Partitioner를 통해 
   + 이 해쉬값을 기준으로 어느 파티션에 들어갈지 결정됨.
   + 동일한 메시지 키를 가진 레코드는 동일한 해쉬값을 가지기 때문에  
     항상 동일한 파티션에 들어감.
-    ![Partitioner_has_message_key](../images/Kafka/04_Partitioner.png)
+    ![Partitioner_has_message_key](../../images/Kafka/04_Partitioner.png)
 - 메시지 키가 없는 경우
   + 라운드로빈으로 들어감.
   + 프로듀서에서 배치로 모을 수 있는 최대한의 레코드들을 모아서 파티션으로 보내게 됨.

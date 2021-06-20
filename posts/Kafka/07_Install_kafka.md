@@ -3,25 +3,25 @@
 ### 카프카 및 주키퍼 설치
 EC2 서버 3개 설치  
 프리티어인 t2.micro 선택
-![ec2 instance](../images/Kafka/07_Install_Kafka_ec2_instances.png)
+![ec2 instance](../../images/Kafka/07_Install_Kafka_ec2_instances.png)
 
 iterm2로 instance 3대 모두 접속
 ```shell
 ssh -i [pem 키 파일] ubuntu@[ec2인스턴스 url]
 ```
-![ssh 접속](../images/Kafka/07_Install_Kafka_ec2_iterm2.png)
+![ssh 접속](../../images/Kafka/07_Install_Kafka_ec2_iterm2.png)
 
 3대 모두 주키퍼 다운로드
 ```shell
 wget https://downloads.apache.org/zookeeper/zookeeper-3.7.0/apache-zookeeper-3.7.0-bin.tar.gz
 ```
-![wget zookeeper](../images/Kafka/07_Install_Kafka_wget_zookeeper.png)
+![wget zookeeper](../../images/Kafka/07_Install_Kafka_wget_zookeeper.png)
 
 압축 해제
 ```shell
 tar xvf apache-zookeeper-3.7.0-bin.tar.gz
 ```
-![zookeeper 압축해제](../images/Kafka/07_Install_Kafka_tarxvf_zookeeper.png)
+![zookeeper 압축해제](../../images/Kafka/07_Install_Kafka_tarxvf_zookeeper.png)
 
 주키퍼설정
 ```shell
@@ -40,7 +40,7 @@ server.1=test-broker01:2888:3888
 server.2=test-broker02:2888:3888
 server.3=test-broker03:2888:3888
 ```
-![zoo.cfg](../images/Kafka/07_Install_Kafka_zoo_cfg.png)
+![zoo.cfg](../../images/Kafka/07_Install_Kafka_zoo_cfg.png)
 
 /etc/hosts에 설정 추가
 
@@ -50,7 +50,7 @@ server.3=test-broker03:2888:3888
 172.31.40.79 test-broker03
 
 ```
-![hosts](../images/Kafka/07_Install_Kafka_hosts.png)
+![hosts](../../images/Kafka/07_Install_Kafka_hosts.png)
 
 자바 설치
 ```shell
@@ -63,13 +63,13 @@ cd /home/ubuntu/apache-zookeeper-3.7.0-bin/bin
 sudo ./jkServer.sh start
 ```
 
-![run zookeeper](../images/Kafka/07_Install_Kafka_run_zookeeper.png)
+![run zookeeper](../../images/Kafka/07_Install_Kafka_run_zookeeper.png)
 
 Kafka 다운로드
 ```shell
 wget https://mirror.navercorp.com/apache/kafka/2.8.0/kafka-2.8.0-src.tgz
 ```
-![install kafka](../images/Kafka/07_Install_Kafka_install_kafka.png)
+![install kafka](../../images/Kafka/07_Install_Kafka_install_kafka.png)
 
 Kafka 압축해제
 ```shell

@@ -5,7 +5,7 @@
 모두 vim plugin을 설치하여 사용중이다.
 vim을 사용하는 것은 좋은데... 😭제일 큰 문제는 한글입력이다.
 
-![problem](../images/hammerspoon/problem.png)
+![problem](images/hammerspoon/problem.png)
 
 입력모드에서 한글을 입력하고 esc로 일반모드로 돌아온 다음  
 일반모드의 명령어를 입력하면 저렇게 한글이 나와버린다.  
@@ -45,13 +45,13 @@ hammerspoon을 알게 되었다.
 ```shell
 brew install hammerspoon
 ```
-![hammerspoon icon](../images/hammerspoon/icon.png)  
+![hammerspoon icon](images/hammerspoon/icon.png)  
 설치를 완료하니 Hammerspoon ~~이름 그대로 망치+숫가락~~ 아이콘이 생겼다.
 
 ### 1. esc 입력시 영어 전환
 
 Console... 메뉴를 클릭.
-![hammerspoon console](../images/hammerspoon/console.png)  
+![hammerspoon console](images/hammerspoon/console.png)  
 init.lua파일을 찾을수 없다고 하니 init.lua파일을 만들자.
 
 ~/.hammerspoon/init.lua
@@ -132,10 +132,10 @@ end
 hs.keycodes.inputSourceChanged(input_source_alert)
 ```
 
-![hammerspoon console_success](../images/hammerspoon/console_success.png)
+![hammerspoon console_success](images/hammerspoon/console_success.png)
 이상이 없다면 위의 화면처럼 로그가 나올 것이다.
 
 
 맥북에서 캡쳐시 alert창이 나오지 않아 폰으로 찍음.  
-![🇰🇷한글](../images/hammerspoon/kor.png)
-![🇺🇸English](../images/hammerspoon/eng.png)
+![🇰🇷한글](images/hammerspoon/kor.png)
+![🇺🇸English](images/hammerspoon/eng.png)
