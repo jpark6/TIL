@@ -41,11 +41,11 @@ module.exports = {
         link: 'https://github.com/jpark6',
       },
       { text: 'Mail',
-        link: 'mailto:qkstjr09@gmail.com',
+        link: 'mailto://qkstjr09@gmail.com',
       },
       {
-        text: 'VuePress',
-        link: 'https://v2.vuepress.vuejs.org'
+        text: 'blog',
+        link: 'https://jpark6.github.io'
       }
     ],
     sidebar: getSideBar("./"),
