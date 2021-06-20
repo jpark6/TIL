@@ -37,16 +37,15 @@ module.exports = {
     lastUpdated: false,
     nav: [
       {
-        text: 'Guide',
-        link: '/guide/',
+        text: 'Git Repo',
+        link: 'https://github.com/jpark6',
       },
-      {
-        text: 'Config',
-        link: '/config/'
+      { text: 'Mail',
+        link: 'mailto:qkstjr09@gmail.com',
       },
       {
         text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
+        link: 'https://v2.vuepress.vuejs.org'
       }
     ],
     sidebar: getSideBar("./"),
