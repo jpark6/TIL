@@ -16,8 +16,8 @@
 - Scale Out은 여러대의 컴퓨터로 서비스 구성.
 
 #### Scale Out의 흐름.                                                                 
-![scale_out1.png](images/aws/03_aws_scaleout_before.png)
-![scale_out2.png](images/aws/03_aws_scaleout_after.png)
+![scale_out1.png](../../images/aws/03_aws_scaleout_before.png)
+![scale_out2.png](../../images/aws/03_aws_scaleout_after.png)
 
 ### ELB
 - Elastic Load Balancer
