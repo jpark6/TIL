@@ -5,7 +5,6 @@
 <script>
 export default {
   mounted() {
-    console.log("utterances mounted")
     const utterances = document.createElement('script');
     utterances.type = 'text/javascript';
     utterances.async = true;

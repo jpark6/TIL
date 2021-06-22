@@ -26,7 +26,7 @@ export default ({
         utterances.setAttribute('theme','github-light'); // theme 설정
         utterances.setAttribute('repo',`jpark6/TIL`); // 사용할 repository
 
-        contentReply.appendChild(utterances)
+        contentReply.append(utterances)
       }
     } else {
       // same page but hash changed
