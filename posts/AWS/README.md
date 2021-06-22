@@ -1,6 +1,5 @@
 ---
 title: AWS
-sidebarDepth: 0
 ---
 # ☁️ 𝔸𝕎𝕊  
 
