@@ -37,7 +37,6 @@
         <slot name="page-top" />
       </template>
       <template #bottom>
-        <Utterances />
         <slot name="page-bottom" />
       </template>
     </Page>

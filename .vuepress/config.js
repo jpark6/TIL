@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'JPark\'s TIL',
+  title: '📚JPark\'s TIL📝',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -16,8 +16,8 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
-    ['link', { rel: "apple-touch-icon", sizes: "180x180", href: "./icon/180.png"}],
-    ['link', { rel: "icon", type: "image/png", sizes: "128x128", href: "./icon/128.png"}],
+    ['link', { rel: "apple-touch-icon", sizes: "180x180", href: "/icon/180.png"}],
+    ['link', { rel: "icon", type: "image/png", sizes: "128x128", href: "/icon/128.png"}],
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
