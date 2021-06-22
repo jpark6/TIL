@@ -58,46 +58,12 @@ module.exports = {
     'sitemap': {
       hostname: "https://jpark-til.netlify.app"
     },
-    'robots': {
-      /**
-         * @host
-         * Mandatory, You have to provide the host URL
-         */   
-       host: "https://jpark6-til.netlify.app",
-       /**
-        * @disallowAll
-        * Optional: if it's true, all others options are ignored and exclude all robots from the entire server
-        */
-       disallowAll: false,
-       /**
-        * @allowAll
-        * Optional: if it's true and @disallowAll is false, all others options are ignored and allow all robots complete access
-        */
-       allowAll: true,
-       /**
-        * @sitemap
-        * Optional, by default: sitemap.xml
-        */ 
-       sitemap: "/sitemap.xml",
-       /**
-        * @policies
-        * Optional, by default: null
-        */ 
-       policies: [
-           {
-               userAgent: '*',
-               disallow: [
-                   '/admin'
-               ],
-               allow: [    // Optional: Allowed paths. 
-                   '/'
-               ]
-           }
-       ]
+    '@maginapp/vuepress-plugin-katex': {
+      delimeters: 'dollars'
     }
   },
   markdown: {
-    lineNumbers: true
+    lineNumbers: true,
   }
   
 }
