@@ -13,11 +13,21 @@ export default ({
   // ...apply enhancements for the site.
   router.afterEach((to, from) => {
     if (from.path !== to.path) {
-      if (typeof window !== 'undefined' && window.DISQUS) {
-        setTimeout(() => {
-          console.log('DISQUS is exists and try to load!')
-          window.DISQUS.reset({ reload: true })
-        }, 0)
+      if (typeof document !== 'undefined' && document.getElementById('contentReply')) {
+        console.log("reload utterances")
+        const contentReply = document.getElementById('contentReply')
+        contentReply.innerHTML = ""
+        const utterances = document.createElement('script');
+        utterances.type = 'text/javascript';
+        utterances.async = true;
+        utterances.crossorigin = 'anonymous';
+        utterances.src = 'https://utteranc.es/client.js';
+        
+        utterances.setAttribute('issue-term', 'title'); // pathname|url|title|og:title 중 택 1
+        utterances.setAttribute('theme','github-light'); // theme 설정
+        utterances.setAttribute('repo',`jpark6/TIL`); // 사용할 repository
+
+        contentReply.appendChild(utterances)
       }
     } else {
       // same page but hash changed

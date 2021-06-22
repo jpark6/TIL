@@ -37,6 +37,7 @@
         <slot name="page-top" />
       </template>
       <template #bottom>
+        <Utterances />
         <slot name="page-bottom" />
       </template>
     </Page>
@@ -48,7 +49,7 @@ import Home from '../components/Home'
 import Navbar from '../components/Navbar'
 import Page from '../components/Page'
 import Sidebar from '../components/Sidebar'
-import Disqus from '../components/Disqus'
+import Utterances from '../components/Utterances'
 import { resolveSidebarItems } from '../util'
 
 export default {
@@ -59,7 +60,7 @@ export default {
     Page,
     Sidebar,
     Navbar,
-    Disqus
+    Utterances,
   },
 
   data () {

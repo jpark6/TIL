@@ -3,7 +3,6 @@
     <slot name="top" />
 
     <Content class="theme-default-content" />
-    <Disqus slot="page-bottom" class="content" />
     <PageEdit />
 
     <PageNav v-bind="{ sidebarItems }" />
@@ -15,10 +14,9 @@
 <script>
 import PageEdit from '@theme/components/PageEdit.vue'
 import PageNav from '@theme/components/PageNav.vue'
-import Disqus from '@theme/components/Disqus.vue'
 
 export default {
-  components: { PageEdit, PageNav, Disqus },
+  components: { PageEdit, PageNav },
   props: ['sidebarItems']
 }
 </script>
