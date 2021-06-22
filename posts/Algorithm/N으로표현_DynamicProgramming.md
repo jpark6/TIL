@@ -1,4 +1,4 @@
-# [프로그래머스] Level 3 N으로 표현 - 동적계획법
+# [프로그래머스] Lv 3 N으로 표현 - 동적계획법
 
 > [[link]](https://programmers.co.kr/learn/courses/30/lessons/42895)  
 > 강의 : [Python/문제풀이] 파이썬을 무기로, 코딩테스트 광탈을 면하자!
