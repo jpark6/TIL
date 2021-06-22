@@ -57,6 +57,43 @@ module.exports = {
   plugins: {
     'sitemap': {
       hostname: "https://jpark-til.netlify.app"
+    },
+    'robot': {
+      /**
+         * @host
+         * Mandatory, You have to provide the host URL
+         */   
+       host: "https://jpark6-til.netlify.app",
+       /**
+        * @disallowAll
+        * Optional: if it's true, all others options are ignored and exclude all robots from the entire server
+        */
+       disallowAll: false,
+       /**
+        * @allowAll
+        * Optional: if it's true and @disallowAll is false, all others options are ignored and allow all robots complete access
+        */
+       allowAll: true,
+       /**
+        * @sitemap
+        * Optional, by default: sitemap.xml
+        */ 
+       sitemap: "/sitemap.xml",
+       /**
+        * @policies
+        * Optional, by default: null
+        */ 
+       policies: [
+           {
+               userAgent: '*',
+               disallow: [
+                   '/admin'
+               ],
+               allow: [    // Optional: Allowed paths. 
+                   '/'
+               ]
+           }
+       ]
     }
   },
   markdown: {
