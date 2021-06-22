@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https:/jpark6-til.netlify.app/sitemap.xml
+Host: https://jpark6-til.netlify.app

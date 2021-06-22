@@ -19,7 +19,6 @@
     "vuepress-plugin-sitemap": "^2.3.1"
   },
   "dependencies": {
-    "directory-tree": "^2.2.9",
-    "vuepress-plugin-robots": "^1.0.1"
+    "directory-tree": "^2.2.9"
   }
 }
