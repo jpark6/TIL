@@ -5,7 +5,7 @@
 > 무료인강, 유료인강, 유투브, 기술블로그, 코딩테스트, 알고리즘공부 등을 하며  
 > 배운 내용 markdown 파일로 정리
 
-## Github Stats & Language  
+## ⚡️ Github Stats & Language  
 
 |![Mt Github Stats](https://github-readme-stats.vercel.app/api?username=jpark6&show_icons=true&border_radius=0&theme=vue&line_height=40)|![My Top Use Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jpark6&show_icons=true&border_radius=0&theme=vue)|
 |---|---|
