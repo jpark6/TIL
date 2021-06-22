@@ -1,4 +1,4 @@
-# 피보나치 - 동적계획법  
+# [알고리즘] 피보나치 - 동적계획법  
 
 ## reculsive 구현  
 
@@ -11,7 +11,7 @@ def fib(n):
 
 ### ex) fib(6) 재귀함수 사용  
 
-![피보나치 tree](../../images/Algoritim/fib_tree.png)
+![피보나치 tree](../../images/Algorithm/fib_tree.png)
 
 - 6번째 fibonacci 수를 구할때 총 23번의 호출이 이루어졌다.  
     + fib(5) : 1번 fib(4) : 2번 fib(3) : 3번  
