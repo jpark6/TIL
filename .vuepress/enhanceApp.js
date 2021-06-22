@@ -14,7 +14,6 @@ export default ({
   router.afterEach((to, from) => {
     if (from.path !== to.path) {
       if (typeof document !== 'undefined' && document.getElementById('contentReply')) {
-        console.log("reload utterances")
         const contentReply = document.getElementById('contentReply')
         contentReply.innerHTML = ""
         const utterances = document.createElement('script');
