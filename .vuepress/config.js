@@ -58,7 +58,7 @@ module.exports = {
     'sitemap': {
       hostname: "https://jpark-til.netlify.app"
     },
-    'robot': {
+    'robots': {
       /**
          * @host
          * Mandatory, You have to provide the host URL
