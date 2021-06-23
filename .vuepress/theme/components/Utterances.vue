@@ -16,7 +16,7 @@ export default {
     utterances.setAttribute('repo',`jpark6/TIL`); // 사용할 repository
 
     // script tag 삽입
-    this.$refs.comment.appendChild(utterances);
+    this.$refs.comment.append(utterances);
   }
 }
 </script>
