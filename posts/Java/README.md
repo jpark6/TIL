@@ -7,4 +7,4 @@ title: Java
 
 ## 🗂 Contents
 
-> [인터페이스와 추상클래스](./01_AbstractClass_Interface)  
+> [인터페이스와 추상클래스](/posts/Java/01_AbstractClass_Interface.html)  
