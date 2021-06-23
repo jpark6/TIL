@@ -16,8 +16,9 @@ date: 2021-06-20
   > [Quick Sort](./01_Sort_05_QuickSort)  
   
 - 알고리즘  
-  > [피보나치 - 동적 계획법](./Fibonacci_DynamicProgramming)  
+  > [피보나치 - 동적 계획법](./02_Algorithm_01_Fibonacci_DynamicProgramming)  
 
 - 프로그래머스  
-  > [N으로 표현 - 동적 계획법 (프로그래머스 문제)](./N으로표현_DynamicProgramming)  
+  > [lv3. N으로 표현 - 동적 계획법](./03_Programmers_01_N으로표현_DynamicProgramming)  
+  > [lv1. 로또의 최고 순위와 최저 순위](./03_Programmers_01_lottos_max_min)  
 

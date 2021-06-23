@@ -1,6 +1,7 @@
 # [프로그래머스] Lv 3 N으로 표현 - 동적계획법
 
-> [[link]](https://programmers.co.kr/learn/courses/30/lessons/42895)  
+> [문제](https://programmers.co.kr/learn/courses/30/lessons/42895)  
+> [link](https://programmers.co.kr/learn/courses/30/lessons/42895)  
 > 강의 : [Python/문제풀이] 파이썬을 무기로, 코딩테스트 광탈을 면하자!
 
 ## 풀이 방법  
@@ -11,22 +12,6 @@
 
 알고리즘의 진행에 따라 탐색해야 할 범위를 동적으로 결정하므로써 탐색 범위를 한정
 
-ex) 피보나치 수열: 재귀함수 구현시
-
-```shell
-F(4) = f(3)               + f(2)
-     = f(2)        + f(1) + f(1) + f(0)
-     = f(1) + f(0) + f(1) + f(1) + f(0) 
-```
-
-동적계획법 적용
-
-```shell
-f(0) = 0, f(1) = 1
-f(2) = f(1) + f(0) = 1
-f(3) = f(2) + f(1) = 2
-f(4) = f(3) + f(2) = 3
-```
 
 ## 문제 설명  
 
