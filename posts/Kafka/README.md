@@ -11,10 +11,10 @@ title: Kafka
 
 ## 🗂 Contents  
 
-> [Apache Kafka](/posts/Kafka/g01_Info.html)  
-> [What is Kafka TOPIC?](/posts/Kafka/g02_Topic.html)  
-> [Broker, Replication, ISR](/posts/Kafka/g03_Broker_Replication_ISR.html)  
-> [Partitioner](/posts/Kafka/g04_Partitioner.html)  
-> [Consumer Lag](/posts/Kafka/g05_ConsumerLag.html)  
-> [Kafka Burrow](/posts/Kafka/g06_Burrow.html)  
-> [AWS에 Kafka Cluster 설치](/posts/Kafka/g07_Install_kafka.html)  
+> [Apache Kafka](/posts/Kafka/01_Info.html)  
+> [What is Kafka TOPIC?](/posts/Kafka/02_Topic.html)  
+> [Broker, Replication, ISR](/posts/Kafka/03_Broker_Replication_ISR.html)  
+> [Partitioner](/posts/Kafka/04_Partitioner.html)  
+> [Consumer Lag](/posts/Kafka/05_ConsumerLag.html)  
+> [Kafka Burrow](/posts/Kafka/06_Burrow.html)  
+> [AWS에 Kafka Cluster 설치](/posts/Kafka/07_Install_kafka.html)  
