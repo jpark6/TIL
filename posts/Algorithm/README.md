@@ -19,6 +19,7 @@ date: 2021-06-20
   > [피보나치 - 동적 계획법](/posts/Algorithm/02_Algorithm_01_Fibonacci_DynamicProgramming.html)  
 
 - 프로그래머스  
-  > [lv3. N으로 표현 - 동적 계획법](/posts/Algorithm/03_Programmers_01_N으로표현_DynamicProgramming.html)  
-  > [lv1. 로또의 최고 순위와 최저 순위](/posts/Algorithm/03_Programmers_02_lottos_max_min.html)  
+  > [lv1. 로또의 최고 순위와 최저 순위](/posts/Algorithm/03_Programmers_01_lottos_max_min.html)  
+  > [lv3. N으로 표현 - 동적 계획법](/posts/Algorithm/03_Programmers_02_N으로표현_DynamicProgramming.html)  
+  > [lv3. 문자열 압축](/posts/Algorithm/03_Programmers_03_Compress_Word.html) 
 

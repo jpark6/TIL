@@ -77,7 +77,7 @@
 
 ## 코드 구현
 
-- Python
+### Python
 
   ```python
     def solution(lottos, win_nums):
@@ -92,4 +92,32 @@
         if minwoo_num in win_nums:
             same_count += 1
     return [rate[same_count + zero_count], rate[same_count]]
+  ```
+
+### Java
+  
+  ```Java
+  class Solution {
+    public int[] solution(int[] lottos, int[] win_nums) {
+        int[] answer = new int[2];
+        int[] rate = {6,6,5,4,3,2,1};        
+        
+        int zero_count = 0, same_count = 0;
+        for(int minwoo_num: lottos) {
+            if(minwoo_num == 0) {
+                zero_count++;
+                continue;
+            }
+            for(int win_num: win_nums) {
+                if(minwoo_num == win_num){
+                    same_count++;
+                    break;
+                }
+            }
+        }
+        answer[0] = rate[same_count + zero_count];
+        answer[1] = rate[same_count];
+        return answer;
+    }
+  }
   ```
