@@ -63,7 +63,10 @@ module.exports = {
     },
     '@maginapp/vuepress-plugin-katex': {
       delimeters: 'dollars'
-    }
+    },
+    '@vuepress/google-analytics': {
+      'ga': 'G-2BEK8WFYT9'
+    },
   },
   markdown: {
     lineNumbers: true,
