@@ -59,7 +59,7 @@ module.exports = {
    */
   plugins: {
     'sitemap': {
-      hostname: "https://jpark-til.netlify.app"
+      hostname: "https://jpark6-til.netlify.app/"
     },
     '@maginapp/vuepress-plugin-katex': {
       delimeters: 'dollars'
