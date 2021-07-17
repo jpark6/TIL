@@ -62,7 +62,7 @@ module.exports = {
       hostname: "https://jpark6-til.netlify.app/"
     },
     '@maginapp/vuepress-plugin-katex': {
-      delimeters: 'dollars'
+      delimiters: 'dollars'
     },
     '@vuepress/google-analytics': {
       'ga': 'G-2BEK8WFYT9'
