@@ -1,8 +1,7 @@
 
 # [프로그래머스] Lv 3.등굣길 - 동적계획법  
 
-> 문제 : [등굣길
-](https://programmers.co.kr/learn/courses/30/lessons/42898)
+> 문제 : [등굣길](https://programmers.co.kr/learn/courses/30/lessons/42898)
 
 ## 문제 설명  
 
