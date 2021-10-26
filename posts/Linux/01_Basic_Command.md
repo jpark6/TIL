@@ -18,4 +18,4 @@
 - -a : 숨김파일(.으로 시작하는 파일) 표시
   ![ls -a](../../images/Linux/ls_a.png)
 - -l : 리스트 형식으로 출력
-  ![ls -a](../../images/Linux/ls_a.png)
+  ![ls -l](../../images/Linux/ls_l.png)
