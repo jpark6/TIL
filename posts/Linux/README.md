@@ -9,8 +9,4 @@ date: 2021-10-26
 
 ## 📋 Contents
 - 명령어
-  > [Bubble Sort](/posts/Algorithm/01_Sort_01_BubbleSort.html)  
-  > [Insertion Sort](/posts/Algorithm/01_Sort_02_InsertionSort.html)  
-  > [Selection Sort](/posts/Algorithm/01_Sort_03_SelectionSort.html)  
-  > [Merge Sort](/posts/Algorithm/01_Sort_04_MergeSort.html)  
-  > [Quick Sort](/posts/Algorithm/01_Sort_05_QuickSort.html)  
+  > [ls](/posts/Linux/01_ls.html)  
